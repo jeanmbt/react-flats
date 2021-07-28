@@ -14,7 +14,7 @@ class Flat extends Component {
   }
 
   render() {
-    const { handleClick, flat, selected } = this.props;
+    const { flat, selected } = this.props;
 
     const style = { backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('${flat.imageUrl}')`};
 
@@ -22,8 +22,8 @@ class Flat extends Component {
       <div
         className={`card ${selected ? ' active' : ''} `}
         style={style}
-        onClick={handleClick}
-        onKeyDown={handleClick}
+        onClick={this.handleClick}
+        onKeyDown={this.handleClick}
       >
         <div className="card-category">
           {flat.price}
