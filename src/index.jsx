@@ -1,5 +1,3 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable padded-blocks */
 import React from 'react';
 import ReactDOM from 'react-dom';
 
